@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作系统课设</title>
+    <script src="resources/js/jQuery.js"></script>
+    <script src="resources/js/js2_jquery.js" defer></script>
+    <link rel="stylesheet" href="resources/css/main.css">
+   	<link rel="stylesheet" href="resources/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <script type="text/javascript" src="resources/js/jQuery.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.ztree.core.js"></script>
+</head>
+<body>
+    <div class="boxx">
+        <div class="box">
+            <div class="title">
+                <h3>
+                    操作系统课设
+                </h3>
+            </div>
+            
+            <div class="main">
+                <div class="tree">
+                    <h3>目录树</h3>
+                    <div>
+        				<ul id="treeDemo" class="ztree"></ul> 
+   				   	</div>
+                </div>
+                <div class="wz">
+                    <h3>文件管理</h3>
+                    <div class="cli">
+                        <input type="text" value="" placeholder="输入命令" class="ml">
+                        <input type="button" value="确认" class="sbt">
+                    </div>
+                    <span>disk使用情况</span>
+                    <div class="show">
+                      
+                    </div>
+                </div>
+                <div class="jc">
+                    <h3>进程管理</h3>
+                    <div class="addbox">
+                        <input type="text" placeholder="输入进程路径" class="ex_path">
+                        <input type="button" value="加入就绪队列" class="add_q">
+                    </div>
+                    <input type="button" value="启动cpu" class="start">
+                    <input type="button" value="关闭cpu" class="stop">
+                    <div class="runbox">
+                        <h4>正在执行的操作：</h4>
+                        <span class="nowJc"></span>
+                    </div>
+                    <div class="que">
+                        <h4>就绪队列：</h4>
+                        <ul class="rq">
+                        
+                        </ul>
+                        <h4>阻塞队列：</h4>
+                        <ul class="bq">
+                        
+                        </ul>
+                    </div>
+                    <div class="devbox">
+                        <h4>设备：</h4>
+                        <span>-绿色：运行中------------------红色：空闲-</span>
+                        <div class="dev">
+                            <div class="a">a<img src="resources/img/R-C.png" alt=""></div>
+                            <div class="b">b<img src="resources/img/R-C.png" alt=""></div>
+                            <div class="c">c<img src="resources/img/R-C.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>文件内容</h3>
+                    <textarea class="txt"></textarea>
+                    <input type="button" value="确认修改" path="" class="update">
+                </div>
+            </div>
+            <div class="use">
+            	<h3>使用说明</h3>
+				<ul>
+					<li>mkdir 新建目录</li>
+					<pre>    mkdir rot    mkdir rot/aa    mkdir rot/bb    mkdir rot/cc</pre>
+					<li>touch 新建文件</li>
+					<pre>    touch rot/c.ex ( start;x=1;x++;x--;?a9;end; )  touch rot/aa/d.ex ( start;x=3;x++;x--;?a5;end; )  touch rot/bb/f.ex ( start;x=3;x++;x--;?c5;x--;x++;end; )  touch rot/g.ex ( start;x=8;x++?b6;x--;x++;end; )</pre>
+					<pre>    touch rot/cc/r.tx ( abcdefghigklmn )   touch rot/bb/t.tx ( 123456789 )</pre>
+					<li>cat vi 查看文件(也可修改文件)</li>
+					<pre>    cat rot/c.ex    vi rot/cc/r.tx</pre>
+					<li>cp 拷贝文件</li>
+					<pre>    cp rot/bb/t.tx    rot/cc/t.tx</pre>
+					<li>mv 移动文件</li>
+					<pre>    mv rot/bb/t.tx    rot/aa/t.tx</pre>
+					<li>rm 可以删除文件或目录</li>
+					<pre>    rm rot/cc</pre>
+					<li>.ex文件可加入就绪队列，启动cpu可开始运行</li>
+					<pre>    rot/c.ex    rot/aa/d.ex    rot/bb/f.ex</pre>
+					<li>注意事项(用前必读)</li>
+					<pre>文件名与目录名最长3个字母，拓展名最长2字母</pre>
+					<pre>目录和文件要一层一层新建，不能递归创建</pre>
+					<pre>在输入文件名时要带上拓展名</pre>
+					<pre>一个目录最多有8个子目录或子文件</pre>
+					<pre>拷贝或移动文件时，写上预期文件名(改名,可以选择不改，加上原有名即可)</pre>
+					<pre>只有包含拓展名的才是文件，图标只表示目录中有无子文件</pre>
+				</ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

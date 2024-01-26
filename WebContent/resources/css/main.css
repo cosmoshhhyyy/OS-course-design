@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition:0.1s;
+}
+li {
+    list-style: none;
+}
+input:button {
+	cur
+}
+body {
+ 	background:#dfe6e9;
+}
+.boxx {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+}
+
+.box .title {
+    margin-top: 50px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.box .title {
+    display: block;
+    text-align: center;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.main h3 {
+    padding: 10px;
+}
+/* tree 寮�濮� */
+.box .main .tree {
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.tree h3 {
+    display: block;
+    text-align: center;
+}
+.tree span {
+	font-size:13px;
+}
+/* tree 缁撴潫  */
+
+
+/* wz 寮�濮� */
+.box .main .wz {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 500px;
+}
+.box .main .wz .show{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box .main .wz h3 {
+    display: block;
+    text-align: center;
+}
+.box .main .wz span {
+	padding:10px;
+	margin:20px 0;
+	font-weight: bold;
+}
+.cli {
+    display: flex;
+    justify-content: center;
+}
+
+.cli .ml{
+    width: 400px;
+    height: 25px;
+    padding: 2px;
+}
+
+.cli .sbt {
+    width: 90px;
+    
+     background:#55efc4;
+    cursor: pointer;
+    font-size:15px;
+     font-weight: bold;
+}
+.cli .sbt:hover{
+	background:#00b894;
+}
+.block{
+    width:28px;
+    height: 28px;
+    border: 2px solid black;
+}
+/* wz 缁撴潫 */
+
+
+/* jc 寮�濮� */
+.main .jc {
+    width: 260px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.main .jc h3 {
+    display: block;
+    text-align: center;
+}
+
+.main .jc .ex_path {
+    height: 30px;
+    padding: 2px;
+    
+}
+
+.main .jc .start {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #81ecec;
+}
+.main .jc .start:hover {
+	 background-color: #00cec9;
+}
+.main .jc img {
+    width: 70px;
+    height: 70px;
+}
+
+.main .jc .add_q{
+    height: 40px;
+    font-size: 12px;
+    width: 80px;
+    background:#55efc4;
+    cursor: pointer;
+    font-size:12px;
+     font-weight: bold;
+    cursor: pointer;
+}
+.main .jc .add_q:hover{
+	background:#00b894;
+}
+.main .jc .stop {
+	height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:#fab1a0;
+ 	
+}
+.main .jc .stop:hover {
+	background-color:#e17055;
+}
+.main .jc .rq {
+    display: flex;
+    height:35px;
+    font-size:10px;
+}
+
+.main .jc .bq {
+    display: flex;
+    height:30px;
+    font-size:10px;
+}
+
+.main .jc .devbox .dev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .jc .runbox,
+.main .jc .que,
+.main .jc .devbox {
+}
+.main .jc .runbox {
+	height:60px;
+	
+}
+.main .jc .runbox .nowJc {
+	font-size:11px;
+}
+.main .jc .devbox span {
+	font-size:13px;
+}
+
+/* jc 缁撴潫 */
+
+
+/* content 寮�濮� */
+
+.main .content {
+    width: 200px;
+    border: 1px solid black;
+}
+
+.main .content .txt {
+    width: 188px;
+    height: 350px;
+    resize:none;
+    padding:5px;
+}
+.main .content input {
+	width:200px;
+	height:40px;
+	cursor:pointer;
+	background:#ffeaa7;
+	font-size:15px;
+	font-weight: bold;
+}
+.main .content input:hover{
+	background:#fdcb6e;
+}
+/* content 缁撴潫 */
+/* 使用说明开始*/
+.use ul li {
+	
+}
+.use ul pre {
+	padding:5px;
+}
