@@ -1,5 +1,5 @@
 # OS-course-design
-hbu操作系统课程设计
+hbu（河北大学）操作系统课程设计
 
 # 效果图  
 ![Alt text](image.png)  
